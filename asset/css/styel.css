@@ -1,0 +1,613 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+:root {
+    background-color: #1f242d;
+    --second-background-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: #1f242d;
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/* NAVBAR */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    background: rgb(20, 20, 108);
+    text-align: center;
+    position: fixed;
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: aquamarine;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: rgb(26, 111, 111);
+    transition: 1s;
+    padding-right: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: aquamarine;
+    background-color: palegoldenrod;
+    padding: 9px;
+    border-radius: 30px;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: white;
+    display: none;
+}
+
+/* home */
+
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/asset/images/programmin.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.home-content h3 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 8px 8px palegreen;
+}
+
+.home-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: white;
+    letter-spacing: 10px;
+    text-shadow: 8px 8px 8px palegreen;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    border: 0px solid paleturquoise;
+    font-size: 15px;
+    color: white;
+    background-color: paleturquoise;
+    font-weight: 600;
+    box-shadow: 0 0 1rem palegreen;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    box-shadow: none;
+    background-color: palegreen;
+    color: palevioletred;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .5rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* About me */
+
+
+
+.about {
+    width: 100%;
+    position: relative;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-background-color);
+    min-height: 100vh;
+}
+
+.daud {
+    display: block;
+    width: 50%;
+    height: 50%;
+    border-radius: 80%;
+    float: left;
+    border: 2px solid paleturquoise;
+}
+
+.sub-judul {
+    font-size: 45px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+span {
+    color: paleturquoise;
+}
+
+.about-text h2 {
+    text-align: left;
+    line-height: 1.2;
+    color: white;
+}
+
+.about-text h1 {
+    font-size: 2.6rem;
+    color: burlywood;
+}
+
+.about-text p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    color: white;
+}
+
+/* skills */
+.services{
+    min-height: 100vh;
+}
+
+.services h2 {
+    margin-bottom: 5rem;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.services-container .services-box {
+    flex: 1 1 30rem;
+    background: var(--second-background-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #323946;
+    transition: 1s ease;
+}
+
+.services-box{
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.services-container .services-box:hover {
+    border-color: aquamarine;
+    transform: scale(1.02);
+}
+
+.services-box h3 {
+    font-size: 2.6rem;
+    color: white;
+}
+
+.services-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: white;
+}
+
+/* portofolio */
+
+.portofolio {
+    background-color: var(--second-background-color);
+    min-height: 100vh;
+}
+
+.portofolio h2 {
+    margin-bottom: 4rem;
+}
+
+.portofolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 30rem);
+    align-items: center;
+    gap: 20rem;
+}
+
+.portofolio-container .portofolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem paleturquoise;
+    overflow: hidden;
+    display: flex;
+}
+
+.portofolio-box img {
+    width: 100%;
+}
+
+.portofolio-box img:hover {
+    transform: scale(1.1);
+}
+
+.portofolio-box .portofolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    color: white;
+    transform: translateY(100%);
+    transition: 1s;
+}
+
+.portofolio-box:hover .portofolio-layer {
+    transform: translateY(0);
+}
+
+.portofolio-layer h4 {
+    font-size: 3rem;
+}
+
+.portofolio-layer p {
+    font-size: 1.6rem;
+    margin: 0.3rem 0 1rem;
+    color: white;
+}
+/* project */
+.project{
+    background-color: var(--second-background-color);
+}
+
+.project h2 {
+    margin-bottom: 4rem;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.project-container .project-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.project-box:hover img {
+    transform: scale(1.1);
+}
+
+.project-box {
+    position: absolute;
+    width: 390px;
+    height: 260px;
+}
+
+.project-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 0rem;
+    transform: translateY(100%);
+    transition: 1s ease;
+}
+
+.project-box:hover .project-layer {
+    transform: translateY(0);
+}
+
+.project-layer h4 {
+    font-size: 3rem;
+}
+
+.project-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+    color: #fff;
+}
+
+.project-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* contact */
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: white;
+    background: var(--second-background-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/* footer */
+.footer {
+    background: rgb(20, 20, 108);
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 2rem 9%;
+}
+
+p {
+    color: aquamarine;
+    font-size: 1.8rem;
+}
+
+.footer-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: paleturquoise;
+    border-radius: .8rem;
+    transition: 1s ;
+    box-shadow: 0 0 1rem palegreen;
+}
+.footer-icon a i{
+    font-size: 2.4rem;
+    color: var(--second-background-color);
+}
+.footer-icon a:hover{
+    box-shadow: none;
+    background-color: palegreen;
+}
+
+
+
+/* breakpoints */
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .services{
+        padding-bottom: 7rem;
+    }
+
+    .portofolio{
+        padding-bottom: 7rem;
+    }
+
+    .contact{
+        min-height: auto;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #1f242d;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        border-top: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+        margin-right: 90px;
+    }
+
+    .header{
+        width: 100%; 
+    }
+
+
+    .navbar.active{
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .home{
+        flex-direction: column;
+    }
+
+    .home-content h3 {
+        font-size: 4.5rem;
+    }
+    .home-content h1{
+        font-size: 3.5rem;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+    }
+
+    .about img{
+        width: 200px;
+        margin-top: 4rem;
+    }
+
+    .services h2{
+        margin-bottom: 3rem;
+    }
+
+    .portofolio h2{
+margin-bottom: 3rem;
+    }
+
+    .portofolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media screen and (max-width: 671px) {
+    .portofolio-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html{
+        font-size: 50%;
+    }
+
+    .contact form .input-box input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .about-img img{
+        width: 150px;
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+    }
+
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
