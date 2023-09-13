@@ -266,7 +266,7 @@ span {
     display: grid;
     grid-template-columns: repeat(3, 30rem);
     align-items: center;
-    gap: 20rem;
+    gap: 10rem;
 }
 
 .portofolio-container .portofolio-box {
