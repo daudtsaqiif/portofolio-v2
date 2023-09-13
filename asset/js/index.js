@@ -44,10 +44,3 @@ ScrollReveal().reveal('.home-content h1, .about-img', {
 ScrollReveal().reveal('.home-content p, .about-text', {
     origin: 'right'
 });
-// const typed = new Typed('.multiple-text', {
-//     strings: ['Beginner at this', 'Student at IDN Boarding School'],
-//     typeSpeed: 100,
-//     backSpeed: 100,
-//     backDelay: 1000,
-//     loop: true
-// });
